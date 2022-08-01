@@ -1,4 +1,5 @@
 import React from 'react';
+import './experience.css';
 
 const experience = () => {
   return (
@@ -11,6 +12,11 @@ const experience = () => {
         <div className="achievment">
             <div className="circle">Varios</div>
             <span>Proyectos</span>
+            <span>Completados</span>
+        </div>
+        <div className="achievment">
+            <div className="circle">Varios</div>
+            <span>Cursos</span>
             <span>Completados</span>
         </div>
     </div>
