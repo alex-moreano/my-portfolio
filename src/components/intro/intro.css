@@ -81,3 +81,33 @@
     transform: scale(1);
     left: 20%;
 }
+
+.i-right>:nth-child(4){
+    transform: scale(0.5);
+    left: -15%;
+    top: -19%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.r-blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #edd0ff;
+    filter: blur(65px);
+    z-index: -9;
+    top: -20%;
+    left: 50%;
+}
+
+.l-blur{
+    background: #C1F5FF;
+    top: 17rem;
+    width: 21rem;
+    height: 11rem;
+    left: -9rem;
+    z-index: -9;
+    filter: blur(65px);
+}

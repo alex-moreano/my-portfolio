@@ -35,9 +35,16 @@ const intro = () => {
             <img src={Vector1} alt="vector1" />
             <img src={Vector2} alt="vector2" />
             <img src={Alex} alt="foto-alexmoreano" />
+            <img src={Glassesemoji} alt="emoji" />
             <div style={{top:'-4%', left:'68%'}}>
                 <FloatingDiv image={Crown} txttit='Web' txtsub='Developer'/>
             </div>
+            <div style={{top:'18rem', left:'0rem'}}>
+                <FloatingDiv image={Thumbup} txttit='Texto2' txtsub='Texto2'/>
+            </div>
+            {/*Blur divss*/}
+            <div className="r-blur"></div>
+            <div className="l-blur"></div>
         </div>
     </div>
   )
