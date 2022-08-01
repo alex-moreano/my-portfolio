@@ -5,6 +5,7 @@ import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 import Portfolio from "./components/portfolio/portfolio";
 import Testimonial from "./components/testimonials/testimonial";
+import Contact from "./components/contact/contact";
 import './portfolioAlexMoreano.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Portfolio />
       <Testimonial />
+      <Contact />
     </div>
   );
 }
