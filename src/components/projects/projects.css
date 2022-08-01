@@ -1,0 +1,97 @@
+.projects{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 15rem;
+    margin-bottom: -5rem;
+}
+
+.s-leftside{
+    gap: 0.75rem;
+}
+
+.button{
+    margin-top: 0.5rem;
+}
+
+.p-right{
+    position: relative;
+}
+
+.p-mainCircle{
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+}
+
+.p-mainCircle>*{
+    position: absolute;
+}
+
+.p-mainCircle>:nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+
+.p-mainCircle>:nth-child(2){
+    top: 5rem;
+    left: -3rem;
+}
+
+.p-mainCircle>:nth-child(3){
+    top: 5rem;
+    left: 6rem;
+}
+
+.p-mainCircle>:nth-child(4){
+    top: 5em;
+    left: 15rem;
+}
+
+.p-mainCircle>:nth-child(5){
+    top: 13rem;
+    left: 6rem;
+}
+
+.p-secCircle{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: "none";
+    box-shadow: var(--smboxShadow);
+    background: white;
+}
+
+.p-secCircle>img{
+    transform: scale(0.6);
+}
+
+.p-backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.blueCircle{
+    background-color: #1949B8;
+    left: 18rem;
+    top: 0rem;
+}
+
+.yellowCircle{
+    background-color: #F5C32C;
+    left: 18rem;
+    top: 8rem;
+}
