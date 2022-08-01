@@ -9,7 +9,7 @@ import profilepic2 from '../../img/profile2.jpg';
 import profilepic3 from '../../img/profile3.jpg';
 import profilepic4 from '../../img/profile4.jpg';
 
-const testimonial = () => {
+const Testimonial = () => {
    const testimonials=[
     {
         img:profilepic1,
@@ -60,4 +60,4 @@ const testimonial = () => {
   )
 };
 
-export default testimonial;
+export default Testimonial;

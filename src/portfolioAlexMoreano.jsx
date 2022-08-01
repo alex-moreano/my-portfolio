@@ -6,6 +6,7 @@ import Projects from "./components/projects/projects";
 import Portfolio from "./components/portfolio/portfolio";
 import Testimonial from "./components/testimonials/testimonial";
 import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 import './portfolioAlexMoreano.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Portfolio />
       <Testimonial />
       <Contact />
+      <Footer />
     </div>
   );
 }

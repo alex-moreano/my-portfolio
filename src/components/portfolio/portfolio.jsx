@@ -7,7 +7,7 @@ import Ecommerce from '../../img/ecommerce.png';
 import HOC from '../../img/hoc.png';
 import MusicApp from '../../img/musicapp.png';
 
-const portfolio = () => {
+const Portfolio = () => {
   return (
     <div className="portfolio">
         {/*Header */}
@@ -37,4 +37,4 @@ const portfolio = () => {
   )
 };
 
-export default portfolio;
+export default Portfolio;

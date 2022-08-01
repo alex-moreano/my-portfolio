@@ -11,7 +11,7 @@ import Thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
 import Glassesemoji from '../../img/glassesimoji.png';
 
-const intro = () => {
+const Intro = () => {
   return (
     <div className="intro">
         <div className="i-left">
@@ -50,4 +50,4 @@ const intro = () => {
   )
 }
 
-export default intro
+export default Intro;

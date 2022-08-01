@@ -6,7 +6,7 @@ import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
 
-const projects = () => {
+const Projects = () => {
   return (
     <div className="projects">
          <div className="s-leftside">
@@ -50,4 +50,4 @@ const projects = () => {
   )
 };
 
-export default projects;
+export default Projects;
