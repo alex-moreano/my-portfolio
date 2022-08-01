@@ -3,7 +3,8 @@ import Intro from "./components/intro/intro";
 import Services from "./components/services/services";
 import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
-import './portfolio.css';
+import Portfolio from "./components/portfolio/portfolio";
+import './portfolioAlexMoreano.css';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <Experience />
       <Projects />
+      <Portfolio />
     </div>
   );
 }
