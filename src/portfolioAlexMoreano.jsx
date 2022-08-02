@@ -7,11 +7,21 @@ import Portfolio from "./components/portfolio/portfolio";
 import Testimonial from "./components/testimonials/testimonial";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
+import { themeContext } from "./components/toggle/toggleContext.js";
+import { useContext } from "react";
 import './portfolioAlexMoreano.css';
 
 function App() {
+  const theme = useContext(themeContext);
+  const darkmode = theme.state.darkmode;
   return (
-    <div className="App">
+    <div className="App"
+      style={
+        {
+          background: darkmode? 'black': '',
+          color: darkmode? 'white':  ''
+        }}
+    >
       <Navbar />
       <Intro />
       <Services />

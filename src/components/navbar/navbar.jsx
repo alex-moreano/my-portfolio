@@ -1,4 +1,5 @@
 import React from "react";
+import Toggle from '../toggle/Toggle';
 import './navbar.css';
 
 const Navbar = () => {
@@ -6,8 +7,8 @@ const Navbar = () => {
         <div className="n-wrapper">
             <div className="n-left">
                 <div className="n-name">Alex Moreano</div>
-                <span>toggle</span>
-                <span>lang toggle</span>
+                <Toggle/>
+                <span>langsect</span>
             </div>
             <div className="n-right">
                 <div className="n-list">

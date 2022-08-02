@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Index from './portfolioAlexMoreano';
+import {ThemeProvider} from './components/toggle/toggleContext.js';
 
 ReactDOM.render(
-    <Index />,
+   <ThemeProvider>
+     <Index />,
+   </ThemeProvider>,
   document.getElementById('root')
 );
 

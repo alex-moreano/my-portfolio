@@ -1,4 +1,6 @@
 import React from 'react';
+import { themeContext } from '../toggle/toggleContext';
+import { useContext } from 'react';
 import './intro.css';
 import FloatingDiv from '../floatingdiv/FloatingDivComponent';
 import Github from '../../img/github.png';
@@ -12,11 +14,13 @@ import Crown from '../../img/crown.png';
 import Glassesemoji from '../../img/glassesimoji.png';
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkmode = theme.state.darkmode;
   return (
     <div className="intro">
         <div className="i-left">
             <div className="i-name">
-                <span>Hola! Soy</span>
+                <span style={{color: darkmode? 'white':''}}>Hola! Soy</span>
                 <span>Alex Moreano</span>
                 <span>Fullstack Developer Jr, con ganas de
                     desarrollar proyectos web desafiantes para

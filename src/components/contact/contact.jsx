@@ -3,11 +3,16 @@ import emailjs from '@emailjs/browser';
 import {useRef} from 'react';
 import './contact.css';
 import { useState } from 'react';
+import { themeContext } from '../toggle/toggleContext';
+import { useContext } from 'react';
 
 const Contact = () => {
-const form = useRef();
-const [done, setDone] = useState(false);
-const sendEmail = (e) => {
+    const theme = useContext(themeContext);
+    const darkmode = theme.state.darkmode;
+    const form = useRef();
+    const [done, setDone] = useState(false);
+
+    const sendEmail = (e) => {
         e.preventDefault();
     
         emailjs.sendForm('service_wh1xa3i', 'template_qg63bwo', form.current, '-3oEA5QE_26cu_MAm')
@@ -22,7 +27,7 @@ const sendEmail = (e) => {
   return (
     <div className="contact-form">
         <div className="s-leftside">
-            <span>Comunicate conmigo</span>
+            <span style={{color:darkmode? 'white':''}}>Comunicate conmigo</span>
             <span>contactame aqui: </span>
             <div className="r-blur s-blur" style={{background:'#ABF1FF94'}}></div>
         </div>

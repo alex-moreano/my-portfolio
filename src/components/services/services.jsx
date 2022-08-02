@@ -1,4 +1,6 @@
 import React from 'react';
+import { themeContext } from '../toggle/toggleContext';
+import { useContext } from 'react';
 import './services.css';
 import Card from '../card/card';
 import Heart from '../../img/heartemoji.png';
@@ -7,11 +9,13 @@ import Humble from '../../img/humble.png';
 
 
 const Services  = () => {
+  const theme = useContext(themeContext);
+  const darkmode = theme.state.darkmode;
   return (
     <div className="services">
         {/*left side */}
         <div className="s-leftside">
-            <span>Yo te</span>
+            <span style={{color:darkmode? 'white':''}}>Yo te</span>
             <span>Ofrezco</span>
             <spane>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sunt illum ab 
                 <br />

@@ -1,4 +1,6 @@
 import React from 'react';
+import { themeContext } from '../toggle/toggleContext';
+import { useContext } from 'react';
 import './projects.css';
 import Upwork from '../../img/Upwork.png';
 import Fiverr from '../../img/fiverr.png';
@@ -7,10 +9,12 @@ import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
 
 const Projects = () => {
+  const theme = useContext(themeContext);
+  const darkmode = theme.state.darkmode;
   return (
     <div className="projects">
          <div className="s-leftside">
-            <span>He trabajado con</span>
+            <span style={{color:darkmode? 'white':''}}>He trabajado con</span>
             <span>proyectos en:</span>
             <spane>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sunt illum ab 
                 <br />
