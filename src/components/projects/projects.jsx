@@ -14,7 +14,7 @@ const Projects = () => {
   const darkmode = theme.state.darkmode;
   const transition = {duration: 3, type: 'spring'};
   return (
-    <div className="projects">
+    <div className="projects" id='Enterprises'>
          <div className="s-leftside">
             <span style={{color:darkmode? 'white':''}}>He trabajado con</span>
             <span>proyectos en:</span>
