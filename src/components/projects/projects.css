@@ -95,3 +95,27 @@
     left: 18rem;
     top: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+    .projects{
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+    }
+
+    .p-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.7);
+    }
+
+    .p-mainCircle{
+        position: static;
+    }
+
+    .p-backCircle{
+        left: 8rem!important;
+    }
+}

@@ -50,14 +50,18 @@ const Intro = () => {
                 initial={{top: '-4%', left: '74%'}}
                 whileInView={{left: '68%'}}
                 transition={transition}
-                style={{top:'-4%', left:'68%'}}>
+                style={{top:'-4%', left:'68%'}}
+                className='floating-div'
+                >
                     <FloatingDiv image={Crown} txttit='Web' txtsub='Developer'/>
             </motion.div>
             <motion.div 
                 initial={{top: '18rem', left: '9rem'}}
                 whileInView={{left: '0rem'}}
                 transition={transition}
-                style={{top:'18rem', left:'0rem'}}>
+                style={{top:'18rem', left:'0rem'}}
+                className='floating-div'
+                >
                     <FloatingDiv image={Thumbup} txttit='Texto2' txtsub='Texto2'/>
             </motion.div>
             {/*Blur divss*/}

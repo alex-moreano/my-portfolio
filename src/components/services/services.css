@@ -61,3 +61,24 @@ a{
     top: 13rem;
     left: -18rem;
 }
+
+@media screen and (max-width:480px){
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+        margin-bottom: 35rem;
+    }
+
+    .s-rightside{
+        display: flex;
+        flex-direction: column;
+        gap: 23rem;
+    }
+
+    .s-rightside>*{
+        position: static;
+    }
+}

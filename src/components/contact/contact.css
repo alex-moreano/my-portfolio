@@ -39,3 +39,22 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+
+@media screen and (max-width:480px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s-leftside{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .contact-form{
+        height: 45rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
