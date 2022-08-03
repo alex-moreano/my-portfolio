@@ -25,7 +25,7 @@ const Contact = () => {
       };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id='Contact'>
         <div className="s-leftside">
             <span style={{color:darkmode? 'white':''}}>Comunicate conmigo</span>
             <span>contactame aqui: </span>

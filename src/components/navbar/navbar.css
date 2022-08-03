@@ -1,7 +1,13 @@
 .n-wrapper{
-    height: 12vh;
+    left: 0;
+    top: 0;
+    height: 13vh;
+    width: 98.9vmax;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
 }
 
 .n-left{
@@ -9,6 +15,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-left: 5%;
 }
 
 .n-right{
@@ -39,13 +46,14 @@ li{
     list-style-type: none;
 }
 
-.n-list>ul>li:hover{
+.link:hover{
     cursor: pointer;
     color: var(--orange);
 }
 
 .n-button{
     flex:2;
+    margin-right: 2rem;
 }
 
 .button:hover{
