@@ -1,6 +1,7 @@
 import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
+import {motion} from 'framer-motion';
 import './projects.css';
 import Upwork from '../../img/Upwork.png';
 import Fiverr from '../../img/fiverr.png';
@@ -11,6 +12,7 @@ import Facebook from '../../img/Facebook.png';
 const Projects = () => {
   const theme = useContext(themeContext);
   const darkmode = theme.state.darkmode;
+  const transition = {duration: 3, type: 'spring'};
   return (
     <div className="projects">
          <div className="s-leftside">
@@ -29,7 +31,12 @@ const Projects = () => {
         </div>
         {/*right side */}
         <div className="p-right">
-            <div className="p-mainCircle">
+            <motion.div className="p-mainCircle"
+                 initial={{rotate: 45}}
+                 whileInView={{rotate: 0}}
+                 viewport={{margin:'-40px'}}
+                 transition={transition}
+            >
                 <div className="p-secCircle">
                     <img src={Upwork} alt="" />
                 </div>
@@ -45,7 +52,7 @@ const Projects = () => {
                 <div className="p-secCircle">
                     <img src={Facebook} alt="" />
                 </div>
-            </div>
+            </motion.div>
             {/*BACK circles */}
             <div className="p-backCircle blueCircle"></div>
             <div className="p-backCircle yellowCircle"></div>

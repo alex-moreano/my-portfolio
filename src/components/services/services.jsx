@@ -1,6 +1,7 @@
 import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
+import {motion} from 'framer-motion';
 import './services.css';
 import Card from '../card/card';
 import Heart from '../../img/heartemoji.png';
@@ -11,6 +12,7 @@ import Humble from '../../img/humble.png';
 const Services  = () => {
   const theme = useContext(themeContext);
   const darkmode = theme.state.darkmode;
+  const transition = {duration: 2, type: 'spring'};
   return (
     <div className="services">
         {/*left side */}
@@ -26,27 +28,40 @@ const Services  = () => {
         </div>
         {/*right side */}
         <div className="s-rightside">
-            <div style={{left:'14rem'}}>
+            <motion.div 
+                style={{left:'14rem'}}
+                initial={{left: '25%'}}
+                whileInView={{left: '14rem'}}
+                transition={transition}>
                 <Card 
                     image={Heart}
                     header={'Design'}
                     detail={'Figma, Sketch, Photoshop, Canva'}
                 />
-            </div>
-            <div style={{top:'12rem', left:'-4rem'}}>
+            
+            </motion.div>
+            <motion.div 
+                style={{top:'12rem', left:'-4rem'}}
+                initial={{left: '25%'}}
+                whileInView={{left: '-4rem'}}
+                transition={transition}>
                 <Card 
                     image={Glasses}
                     header={'Developer'}
                     detail={'Html, Css, Javascript, React'}
                 />
-            </div>
-            <div style={{top:'25rem', left:'20rem'}}>
+            </motion.div>
+            <motion.div 
+                style={{top:'25rem', left:'20rem'}}
+                initial={{left: '25%'}}
+                whileInView={{left: '20rem'}}
+                transition={transition}>
                 <Card 
                     image={Humble}
                     header={'UI/UX'}
                     detail={'Cualquier texto que vaya aqui va en la card'}
                 />
-            </div>
+            </motion.div>
             <div className="r-blur s-blurtwo" style={{background: 'var(--purple)'}}></div>
         </div>
     </div>

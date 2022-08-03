@@ -1,6 +1,7 @@
 import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
+import {motion} from 'framer-motion';
 import './intro.css';
 import FloatingDiv from '../floatingdiv/FloatingDivComponent';
 import Github from '../../img/github.png';
@@ -14,6 +15,7 @@ import Crown from '../../img/crown.png';
 import Glassesemoji from '../../img/glassesimoji.png';
 
 const Intro = () => {
+  const transition = {duration: 2, type: 'spring'};
   const theme = useContext(themeContext);
   const darkmode = theme.state.darkmode;
   return (
@@ -39,13 +41,25 @@ const Intro = () => {
             <img src={Vector1} alt="vector1" />
             <img src={Vector2} alt="vector2" />
             <img src={Alex} alt="foto-alexmoreano" />
-            <img src={Glassesemoji} alt="emoji" />
-            <div style={{top:'-4%', left:'68%'}}>
-                <FloatingDiv image={Crown} txttit='Web' txtsub='Developer'/>
-            </div>
-            <div style={{top:'18rem', left:'0rem'}}>
-                <FloatingDiv image={Thumbup} txttit='Texto2' txtsub='Texto2'/>
-            </div>
+            <motion.img 
+                initial={{left: '-30%'}}
+                whileInView={{left: '-24%'}}
+                transition={transition}
+                src={Glassesemoji} alt="emoji" />
+            <motion.div 
+                initial={{top: '-4%', left: '74%'}}
+                whileInView={{left: '68%'}}
+                transition={transition}
+                style={{top:'-4%', left:'68%'}}>
+                    <FloatingDiv image={Crown} txttit='Web' txtsub='Developer'/>
+            </motion.div>
+            <motion.div 
+                initial={{top: '18rem', left: '9rem'}}
+                whileInView={{left: '0rem'}}
+                transition={transition}
+                style={{top:'18rem', left:'0rem'}}>
+                    <FloatingDiv image={Thumbup} txttit='Texto2' txtsub='Texto2'/>
+            </motion.div>
             {/*Blur divss*/}
             <div className="r-blur"></div>
             <div className="l-blur"></div>
