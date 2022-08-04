@@ -2,6 +2,7 @@ import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
 import {motion} from 'framer-motion';
+import Typical from 'react-typical';
 import './intro.css';
 import FloatingDiv from '../floatingdiv/FloatingDivComponent';
 import Github from '../../img/github.png';
@@ -9,7 +10,7 @@ import Linkedin from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
 import Vector1 from '../../img/Vector1.png';
 import Vector2 from '../../img/Vector2.png';
-import Alex from '../../img/alex.png';
+import Alex from '../../img/alex.gif';
 import Thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
 import Glassesemoji from '../../img/glassesimoji.png';
@@ -23,10 +24,28 @@ const Intro = () => {
         <div className="i-left">
             <div className="i-name">
                 <span style={{color: darkmode? 'white':''}}>Hola! Soy</span>
-                <span>Alex Moreano</span>
-                <span>Fullstack Developer Jr, con ganas de
-                    desarrollar proyectos web desafiantes para
-                    seguir creciendo en mi carrera!
+                <span>
+                    <Typical
+                        loop={Infinity}
+                        wrapper='span'
+                        steps={[
+                            'Alex Moreano',1000,
+                            'Ingeniero en Sistemas',1000,
+                            'Desarrollador fullstack Jr',1000,
+                            'Diseniador',1000,
+                            'Traductor',1000,
+                        ]}
+                    />
+                </span>
+                <span>
+                    <Typical
+                        loop={1}
+                        wrapper='span'
+                        steps={[
+                            'Fullstack Developer Jr, con ganas de desarrollar proyectos web desafiantes para seguir creciendo en mi carrera!',
+                            1000
+                        ]}
+                    />
                 </span>
             </div>
             <button className="button i-button">Contratame!</button>
