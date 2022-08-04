@@ -1,7 +1,7 @@
 .intro{
     display: flex;
     height: 77vh;
-    margin-top: 11rem;
+    padding-top: 11rem;
 }
 
 .i-left{
@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.i-icons>a>img:hover{
+    filter: invert(61%) sepia(59%) saturate(5429%) hue-rotate(161deg) brightness(95%) contrast(101%);
+}
+
 .i-right{
     flex: 1;
     position: relative;
@@ -84,9 +88,9 @@
 }
 
 .i-right>:nth-child(4){
-    transform: scale(0.5);
-    left: -15%;
-    top: -19%;
+    transform: scale(0.3);
+    left: 0%;
+    top: -38%;
     border-radius: 50%;
     padding: 0;
 }

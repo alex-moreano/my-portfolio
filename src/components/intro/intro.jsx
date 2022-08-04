@@ -13,7 +13,7 @@ import Vector2 from '../../img/Vector2.png';
 import Alex from '../../img/alex.gif';
 import Thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
-import Glassesemoji from '../../img/glassesimoji.png';
+import Glassesemoji from '../../img/meme.gif';
 
 const Intro = () => {
   const transition = {duration: 2, type: 'spring'};
@@ -50,7 +50,7 @@ const Intro = () => {
             </div>
             <button className="button i-button">Contratame!</button>
             <div className="i-icons">
-                <a href='https://github.com/alex-moreano' target='_blank' rel="noreferrer"><img src={Github} alt="git" /></a>
+                <a href='https://github.com/alex-moreano' target='_blank' rel="noreferrer"><img src={Github} alt="git"/></a>
                 <a href='https://ec.linkedin.com/in/alex-moreano-b84574188' target='_blank' rel="noreferrer"><img src={Linkedin} alt="linkedin" /></a>
                 <a href='https://www.instagram.com/alexmoreanom/' target='_blank' rel="noreferrer"><img src={Instagram} alt="instagram" /></a>       
             </div>
