@@ -1,9 +1,13 @@
 import React from "react";
 import Toggle from '../toggle/Toggle';
 import './navbar.css';
+import ESP from '../../img/espana.png';
+import FRA from '../../img/francia.png';
+import ENG from '../../img/reino-unido.png';
 import { Link } from 'react-scroll';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
+import ReactTooltip from "react-tooltip";
 
 const Navbar = () => {
     const theme = useContext(themeContext);
@@ -13,7 +17,6 @@ const Navbar = () => {
             <div className="n-left">
                 <div className="n-name">Alex Moreano</div>
                 <Toggle/>
-                <span>langsect</span>
             </div>
             <div className="n-right">
                 <div className="n-list">
@@ -38,11 +41,32 @@ const Navbar = () => {
                     </Link>
                     </ul>
                 </div>
-                <Link spy={true} to='Contact' smooth={true} activeClass="activeClass">
-                    <button className="button n-button">
-                        Contacto
-                    </button>
-                </Link>
+                <div className="n-languageselector">
+                        <img src={ENG} alt="england" data-tip data-for='eng-tooltip'/>
+                        <ReactTooltip
+                            id='eng-tooltip'
+                            place="bottom"
+                            className="tooltip"
+                        >
+                            Translation to English
+                        </ReactTooltip>
+                        <img src={ESP} alt="spain" data-tip data-for='esp-tooltip'/>
+                        <ReactTooltip
+                            id='esp-tooltip'
+                            place="bottom"
+                            className="tooltip"
+                        >
+                            Traducir al Español
+                        </ReactTooltip>
+                        <img src={FRA} alt="france" data-tip data-for='fra-tooltip'/>
+                        <ReactTooltip
+                            id='fra-tooltip'
+                            place="bottom"
+                            className="tooltip"
+                        >
+                            Traduire au Français
+                        </ReactTooltip>
+                </div>
             </div>
         </div>
     )

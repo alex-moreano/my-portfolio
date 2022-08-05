@@ -1,6 +1,7 @@
 import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
+import { Link } from 'react-scroll';
 import {motion} from 'framer-motion';
 import Typical from 'react-typical';
 import './intro.css';
@@ -13,7 +14,6 @@ import Vector2 from '../../img/Vector2.png';
 import Alex from '../../img/alex.gif';
 import Thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
-import Glassesemoji from '../../img/meme.gif';
 
 const Intro = () => {
   const transition = {duration: 2, type: 'spring'};
@@ -31,7 +31,7 @@ const Intro = () => {
                         steps={[
                             'Alex Moreano',1000,
                             'Ingeniero en Sistemas',1000,
-                            'Desarrollador fullstack Jr',1000,
+                            'Desarrollador fullstack jr',1000,
                             'Diseniador',1000,
                             'Traductor',1000,
                         ]}
@@ -48,7 +48,9 @@ const Intro = () => {
                     />
                 </span>
             </div>
-            <button className="button i-button">Contratame!</button>
+            <Link spy={true} to='Contact' smooth={true} activeClass="activeClass" className="i-button">
+                <button className="button i-button">Contratame!</button>
+            </Link>
             <div className="i-icons">
                 <a href='https://github.com/alex-moreano' target='_blank' rel="noreferrer"><img src={Github} alt="git"/></a>
                 <a href='https://ec.linkedin.com/in/alex-moreano-b84574188' target='_blank' rel="noreferrer"><img src={Linkedin} alt="linkedin" /></a>
@@ -60,11 +62,6 @@ const Intro = () => {
             <img src={Vector1} alt="vector1" />
             <img src={Vector2} alt="vector2" />
             <img src={Alex} alt="foto-alexmoreano" />
-            <motion.img 
-                initial={{left: '-30%'}}
-                whileInView={{left: '-24%'}}
-                transition={transition}
-                src={Glassesemoji} alt="emoji" />
             <motion.div 
                 initial={{top: '-4%', left: '74%'}}
                 whileInView={{left: '68%'}}
