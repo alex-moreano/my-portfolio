@@ -1,6 +1,6 @@
 .card{
     width: 10rem;
-    height: 13rem;
+    height: 6rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -22,21 +22,19 @@
 
 .card>img{
     transform: scale(0.6);
-    margin-bottom: -2rem;
-}
-
-.c-button{
-    background: #ffffff;
-    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.315);
-    border-radius: 7px;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    color: #5290fd;
+    margin-top: -1.5rem;
+    margin-bottom: -3rem;
 }
 
 @media screen and (max-width:480px){
     .card{
-        width: 75vw;
+        width: 55vw;
+        right: 3rem;
+        left: -3rem;
+    }
+
+    .card>img{
+        margin-top: 0.5rem;
+        transform: scale(0.5);
     }
 }

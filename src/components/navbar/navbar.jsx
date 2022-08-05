@@ -39,6 +39,9 @@ const Navbar = () => {
                     <Link spy={true} to='Testimonials' smooth={true} activeClass="activeClass" className="link">
                         <li>Testimonios</li>
                     </Link>
+                    <Link spy={true} to='Contact' smooth={true} activeClass="activeClass" className="link">
+                        <li>Contacto</li>
+                    </Link>
                     </ul>
                 </div>
                 <div className="n-languageselector">

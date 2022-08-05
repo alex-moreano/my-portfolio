@@ -1,5 +1,5 @@
 .services{
-    padding: 6rem 3rem 0 3rem;
+    padding: 8rem 3rem 0 3rem;
     display: flex;
     height: 90vh;
     margin-bottom: 8rem;
@@ -28,7 +28,8 @@
 .s-leftside>:nth-child(3){
     color: var(--gray);
     font-size: 14px;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 a{
@@ -46,6 +47,7 @@ a{
 
 .s-rightside{
     position: relative;
+    margin-left: 5rem;
 }
 
 .s-rightside>*{
@@ -75,7 +77,7 @@ a{
     .s-rightside{
         display: flex;
         flex-direction: column;
-        gap: 23rem;
+        gap: 15rem;
     }
 
     .s-rightside>*{

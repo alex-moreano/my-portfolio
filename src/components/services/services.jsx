@@ -2,6 +2,7 @@ import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
 import {motion} from 'framer-motion';
+import Typical from 'react-typical';
 import './services.css';
 import Card from '../card/card';
 import Heart from '../../img/heartemoji.png';
@@ -18,11 +19,21 @@ const Services  = () => {
         {/*left side */}
         <div className="s-leftside">
             <span style={{color:darkmode? 'white':''}}>Yo te</span>
-            <span>Ofrezco</span>
-            <spane>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sunt illum ab 
+            <span>
+                <Typical
+                    loop={1}
+                    wrapper='span'
+                    steps={[
+                        'ofrezco...',
+                        1000
+                    ]}
+                />
+            </span>
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sunt illum ab 
                 <br />
                 veniam quis quibusdam!
-            </spane>
+            </span>
             <a href="https://www.google.com" className="button s-button" target="_blank" rel="noreferrer">Descarga mi CV</a>
             <div className="r-blur s-blur" style={{background:'#ABF1FF94'}}></div>
         </div>
@@ -31,7 +42,7 @@ const Services  = () => {
             <motion.div 
                 style={{left:'14rem'}}
                 initial={{left: '25%'}}
-                whileInView={{left: '14rem'}}
+                whileInView={{left: '12rem'}}
                 transition={transition}>
                 <Card 
                     image={Heart}
@@ -52,9 +63,9 @@ const Services  = () => {
                 />
             </motion.div>
             <motion.div 
-                style={{top:'25rem', left:'20rem'}}
+                style={{top:'17rem', left:'20rem'}}
                 initial={{left: '25%'}}
-                whileInView={{left: '20rem'}}
+                whileInView={{left: '17rem'}}
                 transition={transition}>
                 <Card 
                     image={Humble}

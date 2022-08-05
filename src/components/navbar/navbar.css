@@ -38,7 +38,7 @@
 .n-list>ul{
     display: flex;
     gap: 2.5em;
-    margin-right: 15.5rem;
+    margin-right: 13rem;
     cursor: pointer;
 }
 
@@ -56,7 +56,7 @@ li{
     margin-right: 2rem;
     position: relative;
     display: flex;
-    gap: 8.5rem;
+    gap: 9.5rem;
 }
 
 .n-languageselector>img{
