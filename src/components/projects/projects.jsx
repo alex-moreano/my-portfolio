@@ -1,7 +1,9 @@
 import React from 'react';
 import { themeContext } from '../toggle/toggleContext';
 import { useContext } from 'react';
+import { Link } from 'react-scroll';
 import {motion} from 'framer-motion';
+import Typical from 'react-typical';
 import './projects.css';
 import Upwork from '../../img/Upwork.png';
 import Fiverr from '../../img/fiverr.png';
@@ -17,7 +19,16 @@ const Projects = () => {
     <div className="projects" id='Enterprises'>
          <div className="s-leftside">
             <span style={{color:darkmode? 'white':''}}>He trabajado con</span>
-            <span>proyectos en:</span>
+            <span>
+                <Typical
+                    loop={1}
+                    wrapper='span'
+                    steps={[
+                        'proyectos en :',
+                        1000
+                    ]}
+                />
+            </span>
             <spane>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sunt illum ab 
                 <br />
                 veniam quis quibusdam!
@@ -26,7 +37,9 @@ const Projects = () => {
                 <br />
                 veniam quis quibusdam!
             </spane>
-            <button className="button i-button">Contratame!</button>
+            <Link spy={true} to='Contact' smooth={true} activeClass="activeClass" className="i-button">
+                <button className="button i-button">Contratame!</button>
+            </Link>
             <div className="r-blur s-blur" style={{background:'#ABF1FF94'}}></div>
         </div>
         {/*right side */}

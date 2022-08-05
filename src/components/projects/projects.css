@@ -1,5 +1,5 @@
 .projects{
-    padding: 0 3rem 0 3rem;
+    padding: 12rem 3rem 0 3rem;
     display: flex;
     height: 90vh;
     margin-top: 15rem;
@@ -16,6 +16,7 @@
 
 .p-right{
     position: relative;
+    left: 2rem;
 }
 
 .p-mainCircle{
