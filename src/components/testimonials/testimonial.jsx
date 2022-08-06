@@ -2,6 +2,7 @@ import React from 'react';
 import './testimonial.css';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper';
+import Typical from 'react-typical';
 import 'swiper/css/pagination';
 import 'swiper/css';
 import profilepic1 from '../../img/profile1.jpg';
@@ -31,7 +32,7 @@ const Testimonial = () => {
     
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper"  id='Testimonials'>
         <div className="t-header">
             <span>La gente que ha trabajado</span>
             <span> conmigo</span>
@@ -48,9 +49,18 @@ const Testimonial = () => {
             {testimonials.map((testimonial, index) => { 
                 return(
                     <SwiperSlide key={index}>
-                        <div className="testimonials" id='Testimonials'>
+                        <div className="testimonials">
                             <img src={testimonial.img} alt="" />
-                            <span>{testimonial.review}</span>
+                            <span>
+                                {testimonial.review}
+                                <Typical
+                                    loop={1}
+                                    wrapper='span'
+                                    steps={[
+                                        `${testimonial.review}`,100,
+                                    ]}
+                                />
+                            </span>
                         </div>
                     </SwiperSlide>
                 )
