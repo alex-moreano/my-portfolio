@@ -15,32 +15,32 @@ const Navbar = () => {
     return (
         <div className="n-wrapper" style={{color: darkmode? 'white':'', background:darkmode? 'black':''}}>
             <div className="n-left">
-                <div className="n-name">Alex Moreano</div>
+                <div className="n-name" style={{color: darkmode? 'white':''}}>Alex Moreano</div>
                 <Toggle/>
             </div>
             <div className="n-right">
                 <div className="n-list">
                     <ul style={{listStyleType:'none'}}>
                     <Link spy={false} to='Intro' smooth={true} activeClass="activeClass" className="link">
-                        <li>Inicio</li>
+                        <li style={{color: darkmode? 'white':''}}>Inicio</li>
                     </Link>
                     <Link spy={true} to='Services' smooth={true} activeClass="activeClass" className="link">
-                        <li>Servicios</li>
+                        <li style={{color: darkmode? 'white':''}}>Servicios</li>
                     </Link>
                     <Link spy={true} to='Experience' smooth={true} activeClass="activeClass" className="link">
-                        <li>Experiencia</li>
+                        <li style={{color: darkmode? 'white':''}}>Experiencia</li>
                     </Link>
                     <Link spy={true} to='Enterprises' smooth={true} activeClass="activeClass" className="link">
-                        <li>Empresas</li>
+                        <li style={{color: darkmode? 'white':''}}>Empresas</li>
                     </Link>
                     <Link spy={true} to='Projects' smooth={true} activeClass="activeClass" className="link">
-                        <li>Proyectos</li>
+                        <li style={{color: darkmode? 'white':''}}>Proyectos</li>
                     </Link>
                     <Link spy={true} to='Testimonials' smooth={true} activeClass="activeClass" className="link">
-                        <li>Testimonios</li>
+                        <li style={{color: darkmode? 'white':''}}>Testimonios</li>
                     </Link>
                     <Link spy={true} to='Contact' smooth={true} activeClass="activeClass" className="link">
-                        <li>Contacto</li>
+                        <li style={{color: darkmode? 'white':''}}>Contacto</li>
                     </Link>
                     </ul>
                 </div>

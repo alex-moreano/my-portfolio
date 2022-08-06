@@ -1,7 +1,7 @@
 .intro{
     display: flex;
     height: 77vh;
-    padding-top: 11rem;
+    padding-top: 8.5rem;
 }
 
 .i-left{
@@ -9,7 +9,7 @@
     position: relative;
     flex: 1;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .i-name{
@@ -42,7 +42,7 @@
 }
 
 .i-icons{
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     gap: 0rem;
 }
