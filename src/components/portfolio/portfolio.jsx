@@ -19,11 +19,21 @@ const Portfolio = () => {
         <span>mi portafolio:</span>
         {/*Slider*/}
         <Swiper
-            spaceBetween={-890}
-            slidePerView={3}
-            grabCursor={true}
+            breakpoints={{
+               1280:{
+                   slidePerView:1,
+                   grabCursor:true,
+                },
+                480:{
+                    slidePerView:6,
+                    grabCursor:true,
+                    direction:'horizontal',
+                },
+            }}
+            observer={'true'}
+            spaceBetween={10}
             className='portfolio-slider'
-        >
+            >
             <SwiperSlide>
                 <img src={Sidebar} alt="" />
             </SwiperSlide>
