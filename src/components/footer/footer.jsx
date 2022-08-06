@@ -8,13 +8,17 @@ import Github from '@iconscout/react-unicons/icons/uil-github';
 const Footer = () => {
   return (
     <div className="footer">
-        <img src={Wave} alt="" style={{width:'100%'}}/>
+        <img className='wave' src={Wave} alt="" style={{width:'100%',height:'150%'}}/>
         <div className="f-content">
-            <span>alxstaleycobain@gmail.com</span>
+            <span>
+            <a href="mailto:alxstaleycobain@gmail.com" style={{textDecoration:'none',color:'white'}}>
+              alxstaleycobain@gmail.com
+            </a>
+            </span>
             <div className="f-icons">
-                <Insta color='white' size='3rem'/>
-                <Linkedin color='white' size='3rem'/>
-                <Github color='white' size='3rem'/>
+                <Insta className="icons" color='white' size='3rem'/>
+                <Linkedin className="icons" color='white' size='3rem'/>
+                <Github className="icons" color='white' size='3rem'/>
             </div>
         </div>
     </div>

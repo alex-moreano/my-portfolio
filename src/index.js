@@ -5,7 +5,7 @@ import {ThemeProvider} from './components/toggle/toggleContext.js';
 
 ReactDOM.render(
    <ThemeProvider>
-     <Index />,
+     <Index />
    </ThemeProvider>,
   document.getElementById('root')
 );

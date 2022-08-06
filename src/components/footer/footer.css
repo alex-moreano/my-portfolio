@@ -4,6 +4,8 @@
     margin: -5rem -3.5rem;
     position: relative;
     margin-top: -7rem;
+    height: 80vh;
+    color: white;
 }
 
 .f-content{
@@ -13,12 +15,34 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 9rem;
+    margin-top: 13rem;
     gap: 4rem;
+}
+
+.wave{
+    z-index: -1;
+}
+
+a{
+    margin-top: 2rem;
+    z-index: 2;
     color:white;
+    text-decoration: none;
 }
 
 .f-icons{
+    z-index: 1;
     display: flex;
     gap: 2rem;
+    margin-top: -2rem;
+}
+
+a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.f-icons>.icons:hover{
+    cursor: pointer;
+    filter: invert(61%) sepia(59%) saturate(5429%) hue-rotate(161deg) brightness(95%) contrast(101%);
 }
