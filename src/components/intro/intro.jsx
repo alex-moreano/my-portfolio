@@ -34,6 +34,7 @@ const Intro = () => {
                             'Desarrollador fullstack jr',1000,
                             'Diseniador',1000,
                             'Traductor',1000,
+                            'Alex Moreano',1000,
                         ]}
                     />
                 </span>
