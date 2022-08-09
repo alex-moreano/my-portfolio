@@ -26,7 +26,7 @@ const Intro = () => {
                 <span style={{color: darkmode? 'white':''}}>Hola! Soy</span>
                 <span>
                     <Typical
-                        loop={Infinity}
+                        loop={1}
                         wrapper='span'
                         steps={[
                             'Alex Moreano',1000,

@@ -108,8 +108,25 @@
     z-index: -9;
     filter: blur(65px);
 }
+@media (max-width:720px){
+  .intro{
+      flex-direction: column-reverse;
+      height: 64rem;
+      gap: 7rem;
+    }
 
-@media screen and (max-width:480px){
+    .i-right{
+        transform: scale(0.8);
+        left: 0;
+    }
+
+    .i-right .blur{
+        display: none;
+    }
+}
+  
+
+@media (max-width:480px){
     .intro{
       flex-direction: column;
       height: 64rem;
@@ -117,8 +134,8 @@
     }
 
     .i-right{
-        transform: scale(0.8);
-        left: -3rem;
+        transform: scale(0.7);
+        left: -2rem;
     }
 
     .i-right .blur{
@@ -129,4 +146,3 @@
         top: -7rem!important;
     }
   }
-    
