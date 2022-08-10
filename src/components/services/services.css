@@ -84,3 +84,24 @@ a{
         position: static;
     }
 }
+
+@media screen and (max-width:720px){
+    .services{
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 7rem;
+        height: 66rem;
+        padding: 0;
+        margin-bottom: 35rem;
+    }
+
+    .s-rightside{
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+    }
+
+    .s-rightside>*{
+        position: static;
+    }
+}

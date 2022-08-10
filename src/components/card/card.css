@@ -38,3 +38,15 @@
         transform: scale(0.5);
     }
 }
+
+@media screen and (max-width:720px){
+    .card{
+        align-items: center;
+        width: 55vw;
+    }
+
+    .card>img{
+        margin-top: 0.5rem;
+        transform: scale(0.5);
+    }
+}
